@@ -1,0 +1,22 @@
+// Arrays in JS
+
+const myFam = ["Amir", "Rahela", "Maisha", "Hamza", 98, 93]
+console.log(myFam);
+
+myFam.push("Abba") // add new element in array
+console.log(myFam);
+myFam.pop()
+console.log(myFam); // deletes last element in array
+
+let n1 =myFam.includes('Amir')
+console.log(n1);
+
+let n2 = myFam.slice(0,4) // Slice operation don't manipulate original array
+console.log(n2);
+
+console.log(myFam);
+
+let n3 = myFam.splice(1,4) // splice manipulate original array and splice off the elements from the original array
+console.log(n3);
+
+console.log(myFam);
