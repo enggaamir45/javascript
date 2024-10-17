@@ -1,0 +1,39 @@
+const myScore = 100  // this is how we declare a number in JS
+console.log(myScore);
+
+const myBalance = new Number(1000)
+console.log(myBalance);
+console.log(myBalance.toString().length); // this will convert a number to string
+
+const myNum = new Number(123.98766)
+console.log(myNum.toFixed(1)); //Exp Output 124.0
+console.log(myBalance.toFixed(2)); // toFixed will fix the number of digits after decimal Exp Output 1000.00
+
+console.log(myNum.toPrecision(5)); // toPrecision will fix the digits before decimal 
+
+const hund = 100000
+console.log(hund.toLocaleString());
+console.log(hund.toLocaleString('en-IN'));
+
+// +++++++++++++++++++++++++ MATH ++++++++++++++++++++++++++++
+
+const myMoney = 150.56877
+
+console.log(Math.floor(myMoney)); // Math.floor round off kar dega aur without decimal value dega
+console.log(Math.abs(myMoney));
+console.log(Math.ceil(myMoney)); // Math.ceil round off kar dega aur hamesha increment value result karega Exp Output: 151
+console.log((Math.floor(myMoney))); // Math.floor round off kar dur hmaesha dec value result karega Exp Output : 150
+console.log(Math.max(3,9,0,3));
+console.log(Math.min(1,99,01,66));
+
+console.log(Math.random()); // Math.random will always return random values between 0 and 1
+
+console.log((Math.random() * 10));
+console.log(Math.floor(Math.random()*10));
+
+// We want to play a dice game and we want values between 1 to 6
+
+let max = 6
+let min = 1
+
+console.log(Math.floor(Math.random()*(max-min)+ 1) + min);
